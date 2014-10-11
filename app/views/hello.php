@@ -13,9 +13,21 @@
 			color: #999;
 		}
 
+		.banner{
+			width:100%;
+			background-size: cover;
+			background-image: url('assets/img/bethpage.jpeg');
+			height:500px;
+		}
+
 	</style>
 </head>
 <body>
+	<div class="banner">
+		<div class="avatar">
+			
+		</div>
+	</div>
 	<p align="center">
 		<img src="assets/splash.svg" alt="" width="67%">
 	</p>
