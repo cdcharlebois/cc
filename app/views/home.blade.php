@@ -25,9 +25,9 @@
 			background-image: url('assets/img/conner.svg');
 			background-size: 100% 100%;
 			background-color:#cee8f2;
-			height:200px;
-			width:200px;
-			border-radius: 100px;
+			height:250px;
+			width:250px;
+			border-radius: 125px;
 			margin:auto;
 		}
 
