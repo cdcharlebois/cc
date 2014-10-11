@@ -13,13 +13,13 @@
 
 		body {
 			margin:0;
+			height:auto !important;
 		}
 
 		.banner{
 			width:100%;
-			background-size: cover;
 			background-image: url('assets/img/bethpage2.jpg');
-			height:500px;
+			height:400px;
 		}
 		.avatar{
 			background-image: url('assets/img/conner.svg');
@@ -83,12 +83,30 @@
 			padding:0.1em 0.2em;
 			color:#224032;
 		}
+		.hint{
+			position:fixed;
+			bottom:0;
+			left:47%;
+			padding:1em 1em 0 1em;
+			background-color:#cee8f2;
+			border:1px solid black;
+		}
 
 	</style>
 @stop
 
 @section('content')
-	<div class="banner">
+	<!-- 
+	<div class="banner bcg"
+		data-0="background-position:50% 0px;" 				// when the scroll top is 0 (right at the top of the page)
+		data-top-bottom="background-position: 50% -100px;"	// when the bottom of the element (target) is at the top of the page
+		data-anchor-target="#para"
+	> 
+	-->
+	<div class="banner bcg"
+		data-0="background-position:50% 0px;"	
+		data-400="background-position: 50% -100px;"
+	>
 		<div class="container">
 			<div class="row header">
 				<div class="col-md-4">
@@ -111,7 +129,10 @@
 			</p>
 		</div>
 	</div>
-		<div class="row">
+		<div class="row"
+			data-0="opacity:0"
+			data-100="opacity:1"
+		>
 			<div class="col-md-4">
 				<h2 class="title">Blog</h2>
 				<a href="/blog">
@@ -137,6 +158,13 @@
 				</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="hint"
+		data-0="opacity:1"
+		data-100="opacity:0"
+ 	>
+		V Scroll V
 	</div>
 	
 @stop
