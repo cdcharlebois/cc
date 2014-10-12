@@ -1,5 +1,7 @@
 <html>
 <head>
+	<!-- gloabl viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="//use.typekit.net/umc1lom.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<script src="/assets/js/jquery.min.js"></script>
