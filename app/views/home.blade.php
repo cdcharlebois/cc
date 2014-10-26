@@ -9,6 +9,14 @@
 		#bf9380 - midbrown
 		#d9c4b8 - lightbrown
 		#73482f - darkbrown*/
+
+		/* maple leafs 
+			#022873 - 1
+			#021F59 - 2
+			#021740 - 3
+			#010D26 - 4
+			#F2F2F2 - white
+		*/
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
 		body {
@@ -18,13 +26,13 @@
 
 		.banner{
 			width:100%;
-			background-image: url('assets/img/bethpage2.jpg');
+			/*background-image: url('assets/img/Cover2.jpg');*/
 			height:400px;
 		}
 		.avatar{
 			background-image: url('assets/img/conner.svg');
 			background-size: 100% 100%;
-			background-color:#cee8f2;
+			background-color:#f2f2f2;
 			height:250px;
 			width:250px;
 			border-radius: 125px;
@@ -33,7 +41,7 @@
 
 		h1.title{
 			background-color: rgba(0,0,0,0.7);
-			color:#cee8f2;
+			color:#f2f2f2;
 			font-size: 75px;
 			font-weight: 200;
 			padding-left: 1em;
@@ -43,7 +51,7 @@
 		}
 		h3.title{
 			background-color: rgba(0,0,0,0.7);
-			color:#cee8f2;
+			color:#f2f2f2;
 			font-weight: 200;
 			padding-left: 78px;
 			height:50px;
@@ -54,11 +62,11 @@
 			margin-top: 100px
 		}
 		h2{
-			color:#73482f;
+			color:#021740;
 			text-align: center
 		}
 		.shortcut{
-			background-color:#bf9380; /*midbrown*/
+			background-color:#021F59; /*midbrown*/
 			height: 200px;
 			width: 200px;
 			border-radius: 100px;
@@ -75,23 +83,23 @@
 			font-size: 1.6em
 		}
 		a.text-link:hover{
-			background-color:#224032;
+			background-color:#021F59;
 			color:#ffffff;
 			text-decoration: none
 		}
 		a.text-link{
 			padding:0.1em 0.2em;
-			color:#224032;
+			color:#021F59;
 		}
-		.hint{
-			position:fixed;
-			bottom:0;
-			left:47%;
-			padding:1em 1em 0 1em;
-			background-color:#cee8f2;
-			border:1px solid black;
+		.new-bcg{
+			background-image: url('/assets/img/Cover3.jpg');
+			background-size:100% auto;
+			background-position: 25% 50%
 		}
-
+		.rink{
+			background-image: url('https://c1.staticflickr.com/9/8216/8405530180_c42216c40d_z.jpg');
+			background-size:100% auto;
+		}
 	</style>
 @stop
 
@@ -103,17 +111,15 @@
 		data-anchor-target="#para"
 	> 
 	-->
-	<div class="banner bcg"
-		data-0="background-position:50% 0px;"	
-		data-400="background-position: 50% -100px;"
+	<!-- <img src="/assets/img/Cover2.jpg" width="100%" alt=""> -->
+	<div class="banner new-bcg"
+		data-0="background-position: 25% 75%"
+		data-top-bottom="background-position: 25% 25%"
 	>
 		<div class="container">
 			<div class="row header">
-				<div class="col-md-4">
-					<div class="avatar"></div>
-				</div>	
 				<div class="col-md-7">
-					<h1 class="title">Conner<br>Charlebois</h1>
+					<h1 class="title">Conner Charlebois</h1>
 					<h3 class="title">Consultant at Adobe. Netflix Enthusiast. Coffee Aficionado</h3>
 				</div>
 			</div>	
@@ -129,44 +135,8 @@
 			</p>
 		</div>
 	</div>
-		<div class="row"
-			data-0="opacity:0"
-			data-100="opacity:1"
-		>
-			<div class="col-md-4">
-				<h2 class="title">Blog</h2>
-				<a href="/blog">
-				<div class="shortcut">
-					<img src="/assets/img/book.svg" width="134" alt="">
-				</div>
-				</a>
-			</div>
-			<div class="col-md-4">
-				<h2 class="title">Tools</h2>
-				<a href="http://tools.connercharlebois.com">
-					<div class="shortcut">
-						<img src="/assets/img/wrench.svg" width="134" alt="">
-					</div>
-				</a>
-			</div>
-			<div class="col-md-4">
-				<h2 class="title">Projects</h2>
-				<a href="/projects">
-					<div class="shortcut">
-						<img src="/assets/img/case.svg" width="134" alt="">
-					</div>
-				</a>
-			</div>
-		</div>
 	</div>
-
-	<div class="hint"
-		data-0="opacity:1"
-		data-100="opacity:0"
- 	>
-		V Scroll V
-	</div>
-	
+	</div>	
 @stop
 
 @section('footer')
