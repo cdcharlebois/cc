@@ -1,10 +1,10 @@
 <?php
 
-use Eloquent;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Game extends Eloquent {
 
-	protected $fillable = [];
+	protected $fillable = ['playerOne_id', 'playerTwo_id'];
 
     public function playerOne()
     {

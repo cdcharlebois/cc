@@ -1,6 +1,6 @@
 <?php
 
-use Eloquent;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Location extends Eloquent {
 
