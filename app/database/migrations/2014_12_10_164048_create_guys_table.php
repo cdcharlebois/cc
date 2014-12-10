@@ -20,6 +20,7 @@ class CreateGuysTable extends Migration {
             $table->integer('capacity');
             $table->integer('player_id')->unsigned();
             $table->integer('location_id')->unsigned();
+            $table->timestamps();
 
             $table->foreign('player_id')->references('id')->on('players');
             $table->foreign('location_id')->references('id')->on('location');

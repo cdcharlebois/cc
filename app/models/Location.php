@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Location extends Eloquent {
 
-	protected $fillable = [];
+	protected $fillable = ['type', 'number', 'game_id'];
 
     public function game()
     {

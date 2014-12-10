@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Guy extends Eloquent {
 
-	protected $fillable = [];
+	protected $fillable = ['dSpeed','pSpeed', 'capacity', 'player_id', 'location_id'];
 
     public function location()
     {
