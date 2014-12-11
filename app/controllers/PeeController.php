@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: charlebo
@@ -9,7 +10,8 @@ class PeeController extends BaseController
 {
     public function index()
     {
-        return "hello";
+        // Get all Guys and their locations
+        return View::make('game',['foo'=>'bar']);
     }
 
     public function sendToBathroom($guyId, $urinalId)
